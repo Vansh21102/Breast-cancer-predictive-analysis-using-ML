@@ -14,9 +14,9 @@ df.drop(["id"], axis = 1, inplace = True)
 #sns.heatmap(df.corr())
 #plt.show()
 
-df["diagnosis"] = np.where(df["diagnosis"].str.contains("M"), 1, 0)
-
 #print(np.unique(df["diagnosis"]))
+
+df["diagnosis"] = np.where(df["diagnosis"].str.contains("M"), 1, 0)
 
 dflabel = df.copy()
 df.drop('diagnosis', axis = 1, inplace = True)
@@ -28,6 +28,3 @@ regressor.fit(X_train, Y_train)
 score = regressor.score(X_test,Y_test)
 
 print("score = ", score)
-
-#print(df.head())
-#print(dflabel.head())
