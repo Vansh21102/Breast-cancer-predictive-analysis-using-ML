@@ -5,4 +5,4 @@ the program uses a real world dataset having 31 features to predict whether a tu
 Alorithm used - Logistic Regression,
 Accuracy - 95.32%
 
-~the data has been sourced from Kaggle.com~
+~the data has been sourced from Kaggle.com
